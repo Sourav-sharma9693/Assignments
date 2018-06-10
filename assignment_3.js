@@ -159,3 +159,39 @@ console.log(Array.isArray(aa))
 console.log(">>")
 
 
+// Question 13:
+console.log("   This is question-13")
+
+var arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+var mf = 1;
+var m = 0;
+var item;
+
+for (var i = 0; i < arr1.length; i++) {
+  for (var j = i; j < arr1.length; j++) {
+    if (arr1[i] == arr1[j]) m++;
+    if (mf < m) {
+      mf = m;
+      item = arr1[i];
+    }
+  }
+
+  m = 0;
+}
+
+console.log(item + " ( " + mf + " times ) ");
+console.log(">>")
+
+
+// Question 14:
+console.log("   This is question-14")
+var array = [1, 2, 3, 4, 5],
+    sum = 0,
+    prod = 1,
+    i;
+for (i = 0; i < array.length; i ++) 
+   {
+    sum += array[i];
+    prod *= array[i];
+    }
+console.log('Sum : '+sum + ' Product :  ' +prod); 
